@@ -1,0 +1,11 @@
+org\example\model\Terem.class
+org\example\model\Szek.class
+org\example\dao\TeremDao.class
+org\example\dao\FilmDao.class
+org\example\model\Film.class
+org\example\model\Vetites.class
+org\example\config\Configuration.class
+org\example\dao\FoglalasDao.class
+org\example\model\Foglalas.class
+org\example\dao\VetitesDao.class
+org\example\dao\MoziDao.class

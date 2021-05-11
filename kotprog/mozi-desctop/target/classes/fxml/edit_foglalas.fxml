@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.EditFoglalasController">
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" percentWidth="40.0" prefWidth="100.0" />
+        <ColumnConstraints minWidth="10.0" percentWidth="60.0" prefWidth="100.0" />
+    </columnConstraints>
+    <children>
+        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnSpan="2">
+            <children>
+                <Label text="Foglalás módosítása">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+        <Label text="Foglaló neve:" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Vetítes id:" GridPane.rowIndex="2">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <children>
+                <Button fx:id="go" mnemonicParsing="false" onAction="#save" text="Mehet" />
+                <Button mnemonicParsing="false" onAction="#cancel" text="Mégse" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <TextField fx:id="vetitesid" prefHeight="26.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="foglalo" prefHeight="26.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Szék id:" GridPane.rowIndex="3">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="szekid" prefHeight="26.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </children>
+</GridPane>

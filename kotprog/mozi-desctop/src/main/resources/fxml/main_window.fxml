@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.MainController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="106.0" prefWidth="302.0" text="Főmenü">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="203.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="99.0" text="Termek">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#goToTermek" prefHeight="100.0" prefWidth="100.0" text="Menj" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="46.0" prefWidth="151.0" text="Foglalások">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToFoglalasok" prefHeight="100.0" prefWidth="100.0" text="Menj" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label text="Vetítések">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#goToVetitesek" prefHeight="100.0" prefWidth="100.0" text="Menj" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label text="Filmek">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#goToFilmek" prefHeight="100.0" prefWidth="100.0" text="Menj" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
